@@ -1,2 +1,29 @@
 services:
-  $END$
+  mysql:
+    image: mysql:9.7
+    container_name: mysql97
+    restart: unless-stopped
+    environment:
+      MYSQL_ROOT_PASSWORD: changeme
+      MYSQL_DATABASE: mydb
+      MYSQL_USER: app
+      MYSQL_PASSWORD: apppass
+    ports:
+      - "3306:3306"
+    volumes:
+      - mysql97_data:/var/lib/mysql
+  my_mongo:
+    image: mongo:7.0
+    container_name: my_mongo
+    restart: unless-stopped
+    environment:
+      MONGO_INITDB_ROOT_USERNAME: root
+      MONGO_INITDB_ROOT_PASSWORD: changeme
+      MONGO_INITDB_DATABASE: mydb
+    ports:
+      - "27017:27017"
+    volumes:
+      - my_mongo_data:/data/db
+volumes:
+  mysql97_data:
+  my_mongo_data:
