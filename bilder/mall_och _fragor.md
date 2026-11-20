@@ -4,7 +4,7 @@
 
 Skärmdump som visar database explorer i IntelliJ med skapad person-tabell med data:
 
-![MySQL i database explorer](bilder/bild2.png)
+![MySQL i database explorer](./bild2.png)
 
 NOT: Ni ska även ha skapat en user som bara har access till databasen my_database, ingen bild krävs
 
@@ -12,14 +12,14 @@ NOT: Ni ska även ha skapat en user som bara har access till databasen my_databa
 
 Skärmdump av databas på MongoDB Atlas med skapad movie-collection med data:
 
-![MongoDBAtlas](bilder/bild3.png)
+![MongoDBAtlas](./bild3.png)
 
 # SQL
 
 Skärmdump som visar att ni klarat av första två sidorna på sqlbolt.com:s interaktiva tutorial
 
-![SQL-bolt](bilder/bild4.png)
-![SQL-bolt](bilder/bild5.png)
+![SQL-bolt](./bild4.png)
+![SQL-bolt](./bild5.png)
 
 # Frågor som ni ska svara på (G-nivå)
 
